@@ -57,7 +57,7 @@ export const Dashboard = () => {
 
       try {
         const response = await axios.post(
-          "http://localhost:8080/api/v1/transactions/get-transaction",
+          "https://spend-smart-3x86.vercel.app/api/v1/transactions/get-transaction",
           formData,
           {
             headers: { Authorization: `Bearer ${token}` },
@@ -78,7 +78,7 @@ export const Dashboard = () => {
   const handleDelete = async (id) => {
     try {
       const response = await axios.post(
-        "http://localhost:8080/api/v1/transactions/delete-transaction",
+        "https://spend-smart-3x86.vercel.app/api/v1/transactions/delete-transaction",
         { id },
         {
           headers: { Authorization: `Bearer ${token}` },

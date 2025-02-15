@@ -11,7 +11,7 @@ const LoginPage = () => {
     const password = e.target.password.value;
 
     try {
-      const response = await fetch("http://localhost:8080/api/v1/users/login", {
+      const response = await fetch("https://spend-smart-3x86.vercel.app/api/v1/users/login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, password }),

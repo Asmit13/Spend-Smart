@@ -13,7 +13,7 @@ const SignupPage = () => {
 
     try {
       const response = await fetch(
-        "http://localhost:8080/api/v1/users/register",
+        "https://spend-smart-3x86.vercel.app/api/v1/users/register",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },

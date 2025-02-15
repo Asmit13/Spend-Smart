@@ -98,7 +98,7 @@ export const AddTransaction = () => {
     };
 
     try {
-      const response = await fetch("http://localhost:8080/api/v1/transactions/add-transaction", {
+      const response = await fetch("https://spend-smart-3x86.vercel.app/api/v1/transactions/add-transaction", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

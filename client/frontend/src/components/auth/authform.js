@@ -1,4 +1,5 @@
 import React from "react";
+import ShinyText from "../ui/shinytext";
 
 const AuthForm = ({ isLogin, onSubmit }) => {
   return (
@@ -6,17 +7,14 @@ const AuthForm = ({ isLogin, onSubmit }) => {
       <div className="bg-[#1c1f24] rounded-lg shadow-lg p-8 w-96">
         {/* Image at the top */}
         <div className="flex justify-center mb-6">
-          <img
-            src="./hiemoji.png"
-            alt="Placeholder"
-            className="w-24 h-24 rounded-full"
-          />
+         
+        <ShinyText text={isLogin ? "LOGIN" : "SIGN UP"}  disabled={false} speed={3} className='text-2xl font-bold text-center' />
+        <h1 className="text-2xl font-bold text-center ml-2"> TO SPEND SMART</h1>
         </div>
 
         {/* Form Heading */}
-        <h2 className="text-2xl font-bold text-center mb-6">
-          {isLogin ? "Login" : "Sign Up"}
-        </h2>
+        
+        
 
         {/* Form */}
         <form onSubmit={onSubmit}>

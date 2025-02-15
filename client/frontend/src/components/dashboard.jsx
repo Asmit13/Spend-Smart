@@ -11,14 +11,14 @@ import {
 import moment from "moment";
 import { useNavigate } from "react-router-dom";
 import Mastercard from "./mastercard"
-
-
+import ExpenseIncomeCharts from "./chart"
 
 export const Dashboard = () => {
   const [transactions, setTransactions] = useState([]);
   const [isOpen, setIsOpen] = useState(false);
   const [selectedTransaction, setSelectedTransaction] = useState(null);
   const [userLocation, setUserLocation] = useState("");
+ 
  
 
   const navigate = useNavigate();
@@ -50,7 +50,7 @@ export const Dashboard = () => {
   useEffect(() => {
     const fetchTransactions = async () => {
       const formData = {
-        frequency: "11", // You can modify this as needed
+        frequency: "", // You can modify this as needed
         selectedDate: [], // If you need to pass specific date range, update this
         type: "all", // Modify this as needed to filter by type
       };
@@ -103,19 +103,17 @@ export const Dashboard = () => {
   };
 
 
-  
-
-
-  
-
-
   return (
     <div className="min-h-screen bg-gray-900 text-white p-6">
       <h1 className="text-4xl font-bold mb-8 text-center text-blue-400">
         Income & Expense Tracker
       </h1>
+   
+
 
       <Mastercard />
+      
+      <ExpenseIncomeCharts transactions={transactions} />
 
 
       {transactions.length === 0 ? (
@@ -259,7 +257,7 @@ export const Dashboard = () => {
             {/* Amount */}
             <tr className="border-b border-gray-700">
               <td className="px-4 py-2">Amount</td>
-              <td className="px-4 py-2">{`₹${selectedTransaction?.amount?.toFixed(2) || "0.00"}`}</td>
+              <td className="px-4 py-2">{`$${selectedTransaction?.amount?.toFixed(2) || "0.00"}`}</td>
             </tr>
 
             {/* Type */}

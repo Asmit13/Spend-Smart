@@ -3,7 +3,8 @@ import { Dialog, Transition } from "@headlessui/react";
 import { Fragment } from "react";
 import moment from "moment";
 import { FiPlus, FiDollarSign, FiType, FiTag, FiCreditCard, FiMapPin, FiEdit3, FiPlusCircle } from "react-icons/fi";
-
+import Profile from "./profilepage";
+import {motion} from "framer-motion"
 
 export const AddTransaction = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -131,13 +132,18 @@ export const AddTransaction = () => {
 
   return (
     <>
-      <button
+    
+    <motion.button
         onClick={toggleDialog}
-        className="bg-gradient-to-r from-blue-600 to-indigo-700 text-white px-6 py-3 rounded-md hover:shadow-lg transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 m-32"
+        initial={{ y: -100, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ type: "spring", stiffness: 100, damping: 10 }}
+        className="bg-gradient-to-r from-blue-600 to-indigo-700 text-white px-6 py-3 rounded-md hover:shadow-lg transition-all duration-1000 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 mt-32 ml-32 m-3"
       >
         <FiPlus className="inline mr-2" />
         Add Transaction
-      </button>
+      </motion.button>
+      <Profile />
 
       <Transition appear show={isOpen} as={Fragment}>
         <Dialog as="div" className="relative z-50" onClose={toggleDialog}>

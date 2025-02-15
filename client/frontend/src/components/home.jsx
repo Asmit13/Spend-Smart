@@ -52,7 +52,7 @@ export default function Home() {
     <>
       <div className="w-full h-screen relative">
         <Spline
-          scene="https://prod.spline.design/65Xq6My4V9CCDWtg/scene.splinecode"
+          scene="https://prod.spline.design/NIo7K10aRUdTdxBl/scene.splinecode"
           className="absolute inset-0"
         />
 
@@ -230,7 +230,7 @@ export default function Home() {
           <div className="relative z-10">
             <div className="flex justify-center space-x-8 mb-6">
               <a
-                href="https://github.com/piyushpatelcodes"
+                href="https://github.com/Asmit13"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-xl hover:text-white transition-all duration-300 transform hover:scale-110"
@@ -248,7 +248,7 @@ export default function Home() {
                 </svg>
               </a>
               <a
-                href="https://www.linkedin.com/in/piyushpatelcodes"
+                href="https://www.linkedin.com/in/asmit13/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-xl hover:text-white transition-all duration-300 transform hover:scale-110"
@@ -272,12 +272,12 @@ export default function Home() {
             <p className="text-lg font-semibold text-zinc-300 mb-4">
               Developed by{" "}
               <span className="hover:text-green-500 text-green-400 transition-all animate-pulse">
-                Piyush Patel
+                 Asmit Aditya Singh
               </span>
             </p>
 
             <p className="text-sm text-zinc-500">
-              &copy; {new Date().getFullYear()} RevenuePy. All Rights Reserved.
+              &copy; {new Date().getFullYear()} SpendSmart. All Rights Reserved.
             </p>
           </div>
         </footer>

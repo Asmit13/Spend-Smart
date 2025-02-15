@@ -2,6 +2,9 @@ import React from "react";
 import { FaRust, FaNodeJs, FaReact, FaPython } from "react-icons/fa";
 import { SiNextdotjs, SiExpress, SiMongodb } from "react-icons/si";
 import ShinyText from "./ui/shinytext"
+import { RiTailwindCssFill } from "react-icons/ri";
+import { IoLogoJavascript } from "react-icons/io5";
+
 export default function AboutUs() {
   return (
     <div className="  flex-col py-16 relative flex items-center justify-center min-h-screen overflow-hidden bg-gray-900">
@@ -48,12 +51,12 @@ export default function AboutUs() {
             <FaReact className="text-blue-600 hover:-translate-y-3 transition-all duration-500" title="React" />
             <FaNodeJs className="text-green-500 hover:-translate-y-3 transition-all duration-500" title="Node.js" />
             <SiNextdotjs title="Next.js" className="hover:-translate-y-3 transition-all duration-500" />
-            <FaPython className="text-amber-300 hover:-translate-y-3 transition-all duration-500" title="Python" />
-            <FaRust className="text-gray-400 hover:-translate-y-3 transition-all duration-500" title="Rust" />
+            <IoLogoJavascript className="text-amber-300 hover:-translate-y-3 transition-all duration-500" title="JavaScript" />
+            <RiTailwindCssFill className="text-sky-400 hover:-translate-y-3 transition-all duration-500" title="Tailwind CSS" />
           </div>
         </div>
       </div>
-      <ShinyText text="Developed By Piyush Patel!" disabled={false} speed={3}  className='custom-class' />
+      <ShinyText text="Developed By Asmit Aditya Singh!" disabled={false} speed={3}  className='custom-class' />
 
     </div>
   );

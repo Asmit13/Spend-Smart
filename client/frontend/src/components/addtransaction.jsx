@@ -5,6 +5,8 @@ import moment from "moment";
 import { FiPlus, FiDollarSign, FiType, FiTag, FiCreditCard, FiMapPin, FiEdit3, FiPlusCircle } from "react-icons/fi";
 import Profile from "./profilepage";
 import {motion} from "framer-motion"
+import { BiRupee } from "react-icons/bi";
+
 
 export const AddTransaction = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -162,7 +164,7 @@ export const AddTransaction = () => {
           <div className="fixed inset-0 flex items-center justify-center p-6">
             <Dialog.Panel className="w-full max-w-4xl transform overflow-hidden rounded-xl bg-gray-900 text-white p-8 shadow-lg transition-all">
               <Dialog.Title className="text-2xl font-semibold mb-6 flex items-center gap-2">
-                <FiDollarSign className="text-blue-400" />
+                <BiRupee className="text-blue-400" />
                 Add Transaction
               </Dialog.Title>
 
@@ -171,7 +173,7 @@ export const AddTransaction = () => {
                 <div className="grid grid-cols-2 gap-4">
                   <div>
                     <label className="block text-gray-400 text-sm mb-1 flex items-center gap-1">
-                      <FiDollarSign />
+                      <BiRupee />
                       Amount
                     </label>
                     <input

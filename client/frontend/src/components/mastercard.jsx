@@ -133,13 +133,13 @@ const MasterCard = () => {
                 <DevCard
       isOpen={isDevcard}
       closePopup={toggledevcard}
-      name="Piyush Patel"
+      name="Asmit Aditya Singh"
       role="Full Stack Developer"
       experience={3}
       skills={["React", "Python", "Git"]}
       links={{
-        linkedin: "https://www.linkedin.com/in/piyush-patel",
-        github: "https://github.com/piyush-patel"}}
+        linkedin: "https://www.linkedin.com/in/asmit13/",
+        github: "https://github.com/Asmit13"}}
       /> 
       
               </div>
